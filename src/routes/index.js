@@ -1,21 +1,18 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-
-import About from "../components/About";
-import Home from "../components/Home";
+import { Route } from "react-router-dom";
 
 // Routes
-import App from "../components/App";
+import Home from "./Home";
+import About from "./About";
+import NewsList from "./Newslist";
 
 const Routes = () => {
   return (
-    <Router>
-      <div>
-        <Route exact path="/" component={App} />
-        <Route path="/home" component={Home} />
-        <Route path="/about" component={About} />
-      </div>
-    </Router>
+    <div>
+      <Route exact path="/" component={Home} />
+      <Route path="/about" component={About} />
+      <Route path="/news" component={NewsList} />
+    </div>
   );
 };
 

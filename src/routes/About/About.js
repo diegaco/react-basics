@@ -1,20 +1,20 @@
 import React from "react";
 
 // Components
-import Home from "../../components/Home";
+import About from "../../components/About";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 
-const HomeRoute = () => {
+const AboutRoute = () => {
   return (
     <div className="App">
       <Header />
       <main>
-        <Home />
+        <About />
       </main>
       <Footer />
     </div>
   );
 };
 
-export default HomeRoute;
+export default AboutRoute;
