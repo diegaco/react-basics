@@ -1,8 +1,15 @@
 import React, { Component } from "react";
+import { Route } from "react-router-dom";
 import "./App.css";
+
+// Route Components
+
+// Components
 import Header from "../Header";
 import Footer from "../Footer";
-import NewsList from "../NewsList";
+// import NewsList from "../NewsList";
+
+// Data
 import JSON from "../../db.json";
 
 class App extends Component {
@@ -28,15 +35,20 @@ class App extends Component {
       <div className="App">
         <Header keywords={this.getKeywords} />
         <main>
-          <div className="container">
-            <NewsList
-              news={
-                this.state.filteredNews.length
-                  ? this.state.filteredNews
-                  : this.state.news
-              }
-            />
-          </div>
+          {/* <BrowserRouter>
+            <Switch>
+              <Route exact path="/" component={Home} />
+              <Route path="/about" component={About} />
+            </Switch>
+          </BrowserRouter> */}
+
+          {/* <NewsList
+            news={
+              this.state.filteredNews.length
+                ? this.state.filteredNews
+                : this.state.news
+            }
+          /> */}
         </main>
         <Footer />
       </div>

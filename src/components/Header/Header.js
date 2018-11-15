@@ -20,6 +20,7 @@ const Header = props => {
           <input
             type="text"
             name="keywords"
+            id="keywords"
             onChange={props.keywords}
             style={{
               width: "100%"
