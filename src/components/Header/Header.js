@@ -1,5 +1,6 @@
 import React from "react";
 import logo from "../../logo.svg";
+import NavList from "../NavList";
 import "./Header.css";
 
 const Header = () => {
@@ -8,6 +9,7 @@ const Header = () => {
       <div className="logo">
         <img src={logo} className="App-logo" alt="logo" />
       </div>
+      <NavList />
     </header>
   );
 };

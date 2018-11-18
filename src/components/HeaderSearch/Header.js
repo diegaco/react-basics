@@ -1,6 +1,7 @@
 import React from "react";
 import logo from "../../logo.svg";
 import "./Header.css";
+import NavList from "../NavList";
 import NewsContext from "../../context";
 
 const { Consumer } = NewsContext;
@@ -11,6 +12,7 @@ const Header = () => {
       <div className="logo">
         <img src={logo} className="App-logo" alt="logo" />
       </div>
+      <NavList />
       <form
         action=" "
         style={{

@@ -2,7 +2,7 @@ import React from "react";
 import NewsContext from "../../context";
 
 // Components
-import Header from "../../components/HeaderSearch";
+import HeaderSearch from "../../components/HeaderSearch";
 import Footer from "../../components/Footer";
 import NewsListItem from "../../components/NewsList/NewsListItem";
 
@@ -11,7 +11,7 @@ const { Consumer } = NewsContext;
 const newslist = () => {
   return (
     <div className="App">
-      <Header />
+      <HeaderSearch />
       <main>
         <Consumer>
           {({ news, filteredNews }) => {
